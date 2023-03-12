@@ -1,0 +1,52 @@
+Algoritmo: Controle_Abastecimento
+	Procedimento: Trecho
+	Var
+		trecho_total, trecho_planejado, trecho_alternativo: real
+	Inicio
+		Escreva("O trecho planejado é:")
+		Leia(trecho_planejado)
+		Escreva("O trecho alternativo é:")
+		Leia(trecho_alternativo)
+		trecho_total = techo_planejado + trecho_alternativo
+		Escreva("O trecho total é:", trecho_total)
+	Fim_procedimento
+
+	Procedimento: Margem
+	Var
+		trecho_total, margem_segura: real
+	Inicio
+		Escreva("O trecho total é:")
+		Leia(trecho_total)
+		margem_segura = trecho_total *3,6
+		Escreva("A margem segura é:", margem_segura)
+	Fim_procedimento
+
+	Procedimento: calculo_combustivel
+	Var
+		total_combustivel, capacidade_aeronave: real
+	Inicio
+		Escreva("O total de combustível é:")
+		Leia(total_combustivel)
+		Escreva("A capacidade da aeronave é:")
+		Leia(capacidade_aeronave)
+		Se
+			total_combustivel <= capacidade_aeronave
+			Escreva("Voo Aprovado")
+		Senão
+			Escreva("Voo Reprovado")
+		Fim_se
+	Fim_ procedimento
+
+	Procedimento: Abastecimento
+	Var
+		abastecimento, total_combustivel, tem_na_aeronave: real
+	Inicio
+		Escreva("O total de combustível é:")
+		Leia(total_combustivel)
+		Escreva("O que tem na aeronave é:")
+		Leia(tem_na_aeronave)
+		abastecimento = total_combustivel - tem_na_aeronave
+		Escreva("O combustível necessário para o abastecimento é:", abastecimento)
+	Fim_procedimento
+Fim	
+			
